@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { Eye, EyeOff } from "lucide-react";
+import { Eye, EyeOff, ArrowLeft } from "lucide-react";
 
 export default function KayitPage() {
   const [showPassword, setShowPassword] = useState(false);
@@ -18,12 +18,21 @@ export default function KayitPage() {
       <div className="fixed inset-0 bg-radial-[ellipse_at_center] from-[var(--accent)]/3 via-transparent to-transparent pointer-events-none" />
 
       <div className="w-full max-w-md relative z-10">
+        {/* Back button */}
+        <Link
+          href="/"
+          className="inline-flex items-center gap-2 text-sm text-[var(--text-muted)] hover:text-[var(--text)] transition-colors duration-200 mb-8"
+        >
+          <ArrowLeft size={16} />
+          Ana Sayfa
+        </Link>
+
         {/* Logo */}
         <div className="text-center mb-10">
           <Link
             href="/"
             className="text-3xl font-bold tracking-wider text-[var(--text)]"
-            style={{ fontFamily: "var(--font-heading)" }}
+            style={{ fontFamily: "var(--font-body)" }}
           >
             BONCUR<span className="text-[var(--accent)]">.</span>
           </Link>
@@ -33,7 +42,7 @@ export default function KayitPage() {
         <div className="card-gradient p-8 sm:p-10">
           <h1
             className="text-2xl font-bold tracking-tight mb-2"
-            style={{ fontFamily: "var(--font-heading)" }}
+            style={{ fontFamily: "var(--font-body)" }}
           >
             KAYIT OL
           </h1>

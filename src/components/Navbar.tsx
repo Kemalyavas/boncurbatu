@@ -95,7 +95,7 @@ export default function Navbar() {
             ))}
           </div>
 
-          {/* Desktop Social + CTA */}
+          {/* Desktop Social + Auth */}
           <div className="hidden lg:flex items-center gap-4">
             {SOCIAL_LINKS.map((social) => {
               const IconComp = socialIconMap[social.icon];
@@ -112,6 +112,20 @@ export default function Navbar() {
                 </a>
               );
             })}
+            <div className="flex items-center gap-3 ml-2 pl-4 border-l border-[var(--border)]">
+              <a
+                href="/giris"
+                className="text-sm font-medium text-[var(--text-muted)] hover:text-[var(--text)] transition-colors duration-200"
+              >
+                Giriş Yap
+              </a>
+              <a
+                href="/kayit"
+                className="px-4 py-2 text-sm font-medium rounded-lg bg-[var(--accent)] text-white hover:bg-[var(--accent-dark)] transition-colors duration-200"
+              >
+                Kayıt Ol
+              </a>
+            </div>
           </div>
 
           {/* Mobile Hamburger */}
@@ -139,7 +153,23 @@ export default function Navbar() {
               {link.label}
             </a>
           ))}
-          <div className="flex items-center gap-6 mt-4">
+          <div className="flex items-center gap-4 mt-8">
+            <a
+              href="/giris"
+              className="px-6 py-3 text-sm font-medium rounded-lg border border-[var(--border-hover)] text-[var(--text-muted)] hover:text-[var(--text)] transition-colors"
+              onClick={() => setMobileOpen(false)}
+            >
+              Giriş Yap
+            </a>
+            <a
+              href="/kayit"
+              className="px-6 py-3 text-sm font-medium rounded-lg bg-[var(--accent)] text-white hover:bg-[var(--accent-dark)] transition-colors"
+              onClick={() => setMobileOpen(false)}
+            >
+              Kayıt Ol
+            </a>
+          </div>
+          <div className="flex items-center gap-6 mt-6">
             {SOCIAL_LINKS.map((social) => {
               const IconComp = socialIconMap[social.icon];
               return (

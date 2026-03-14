@@ -6,6 +6,7 @@ export default function BeforeAfterSlider() {
   const [sliderPos, setSliderPos] = useState(50);
   const containerRef = useRef<HTMLDivElement>(null);
   const isDragging = useRef(false);
+  const handleRef = useRef<HTMLDivElement>(null);
 
   const updatePosition = useCallback((clientX: number) => {
     if (!containerRef.current) return;
@@ -15,14 +16,25 @@ export default function BeforeAfterSlider() {
     setSliderPos(percent);
   }, []);
 
+  // Desktop: drag anywhere in container
   const handleMouseDown = () => { isDragging.current = true; };
   const handleMouseUp = () => { isDragging.current = false; };
   const handleMouseMove = (e: React.MouseEvent) => {
     if (isDragging.current) updatePosition(e.clientX);
   };
-  const handleTouchMove = (e: React.TouchEvent) => {
-    updatePosition(e.touches[0].clientX);
+
+  // Mobile: only drag from handle
+  const handleTouchStart = (e: React.TouchEvent) => {
+    isDragging.current = true;
+    e.stopPropagation();
   };
+  const handleTouchMove = (e: React.TouchEvent) => {
+    if (isDragging.current) {
+      e.preventDefault();
+      updatePosition(e.touches[0].clientX);
+    }
+  };
+  const handleTouchEnd = () => { isDragging.current = false; };
 
   return (
     <div
@@ -32,7 +44,6 @@ export default function BeforeAfterSlider() {
       onMouseUp={handleMouseUp}
       onMouseLeave={handleMouseUp}
       onMouseMove={handleMouseMove}
-      onTouchMove={handleTouchMove}
     >
       {/* "Before" side — placeholder gradient */}
       <div className="absolute inset-0 bg-gradient-to-br from-zinc-800 via-zinc-900 to-zinc-950">
@@ -62,11 +73,17 @@ export default function BeforeAfterSlider() {
 
       {/* Slider line */}
       <div
-        className="absolute top-0 bottom-0 w-0.5 bg-white/80 z-10"
+        className="absolute top-0 bottom-0 w-0.5 bg-white/80 z-10 pointer-events-none"
         style={{ left: `${sliderPos}%` }}
       >
-        {/* Drag handle */}
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-white/10 backdrop-blur-sm border border-white/30 flex items-center justify-center">
+        {/* Drag handle — touch events only here on mobile */}
+        <div
+          ref={handleRef}
+          onTouchStart={handleTouchStart}
+          onTouchMove={handleTouchMove}
+          onTouchEnd={handleTouchEnd}
+          className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-12 h-12 rounded-full bg-white/10 backdrop-blur-sm border border-white/30 flex items-center justify-center pointer-events-auto touch-none"
+        >
           <div className="flex gap-0.5">
             <div className="w-0.5 h-4 bg-white/80 rounded-full" />
             <div className="w-0.5 h-4 bg-white/80 rounded-full" />

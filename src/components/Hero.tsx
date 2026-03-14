@@ -14,8 +14,7 @@ export default function Hero() {
           src="/images/hero-batu.jpg"
           alt="Batuhan Balkır"
           fill
-          className="object-cover"
-              style={{ objectPosition: "center 55%" }}
+          className="object-cover hero-image"
           priority
           quality={90}
         />
