@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Bebas_Neue, Plus_Jakarta_Sans } from "next/font/google";
+import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 
 const bebasNeue = Bebas_Neue({
@@ -43,7 +44,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="tr" className={`${bebasNeue.variable} ${plusJakarta.variable}`}>
-      <body className="grain">{children}</body>
+      <body className="grain">
+        {children}
+        <Analytics />
+      </body>
     </html>
   );
 }

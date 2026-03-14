@@ -85,9 +85,6 @@ export default function Footer() {
             <a href="/kullanim-kosullari" className="text-xs text-[var(--text-dim)] hover:text-[var(--text-muted)] transition-colors duration-200">
               Kullanım Koşulları
             </a>
-            <a href="/cerez-politikasi" className="text-xs text-[var(--text-dim)] hover:text-[var(--text-muted)] transition-colors duration-200">
-              Çerez Politikası
-            </a>
           </div>
         </div>
       </div>
