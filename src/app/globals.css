@@ -185,14 +185,17 @@ body {
 
 /* ── Hero Image Position ── */
 .hero-image {
-  object-position: center 55%;
+  object-position: center 55% !important;
 }
 
 @media (max-width: 768px) {
-  .hero-image {
-    object-position: center 20%;
+  .hero-img-wrap {
+    top: -35% !important;
+    bottom: auto !important;
+    height: 135% !important;
   }
 }
+
 
 /* ── Scrollbar ── */
 ::-webkit-scrollbar {
