@@ -190,7 +190,7 @@ body {
 
 @media (max-width: 768px) {
   .hero-image {
-    object-position: center 35%;
+    object-position: center 20%;
   }
 }
 
