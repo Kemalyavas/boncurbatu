@@ -16,15 +16,15 @@ export default function Pricing() {
             className="mt-6 text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight"
             style={{ fontFamily: "var(--font-heading)" }}
           >
-            SANA UYGUN{" "}
-            <span className="text-[var(--accent)]">PAKETİ SEÇ</span>
+            KOÇLUK{" "}
+            <span className="text-[var(--accent)]">PAKETLERİ</span>
           </h2>
           <p className="mt-4 text-[var(--text-muted)] max-w-lg mx-auto">
             Hedefin ve bütçen ne olursa olsun, sana uygun bir plan var.
           </p>
         </AnimateOnScroll>
 
-        <div className="grid md:grid-cols-3 gap-5">
+        <div className="grid md:grid-cols-2 gap-5 max-w-3xl mx-auto">
           {PACKAGES.map((pkg, i) => (
             <AnimateOnScroll key={pkg.name} delay={i * 0.1}>
               <div

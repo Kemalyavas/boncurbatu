@@ -23,7 +23,7 @@ export const SOCIAL_LINKS = [
 ];
 
 // ── WhatsApp ──
-export const WHATSAPP_URL = "https://wa.me/905XXXXXXXXX"; // Placeholder — Boncur'dan gelecek
+export const WHATSAPP_URL = "https://wa.me/905307350443";
 
 // ── Hero ──
 export const HERO = {
@@ -42,7 +42,7 @@ export const ABOUT = {
   bio: "12 yaşında mahallemdeki küçük bir spor salonunda başladım. İlk iki yılım ne yapacağımı bilmeden geçti. Rastgele hareketler, anlamsız diyetler. Ama pes etmedim. Deneyimli abilerden öğrendim, doğru teknikleri kavradım ve bu sporu hayatımın merkezine koydum.",
   bio2: "Her planı bizzat kendim hazırlıyorum. Seni bir sayı olarak değil, bir birey olarak görüyorum. Kas kazanmak, yağ yakmak ya da sağlıklı bir yaşam tarzı edinmek, hedefin ne olursa olsun birlikte başaracağız.",
   stats: [
-    { value: "500+", label: "Mutlu Danışan" },
+    { value: "1000+", label: "Öğrenci" },
     { value: "8+", label: "Yıl Deneyim" },
     { value: "550K", label: "Topluluk" },
   ],
@@ -52,26 +52,26 @@ export const ABOUT = {
 export const PROCESS_STEPS = [
   {
     number: "01",
-    title: "İletişim",
-    description: "Bilgilerini paylaş, hedefini ve mevcut durumunu anlat.",
+    title: "İletişim & Analiz",
+    description: "WhatsApp üzerinden boy, kilo, hedef, antrenman geçmişi ve beslenme alışkanlıklarını paylaşıyorsun. Varsa form fotoğraflarını gönderiyorsun. Mevcut durumunu ve hedeflerini birlikte değerlendiriyoruz.",
     icon: MessageSquare,
   },
   {
     number: "02",
-    title: "Kişisel Plan",
-    description: "48 saat içinde sana özel antrenman ve beslenme planın hazır.",
+    title: "Kişisel Plan Hazırlığı",
+    description: "Bilgilerine göre sana özel antrenman programı ve kalori hesaplanmış beslenme planı hazırlıyorum. Supplement ihtiyacın varsa onu da plana ekliyorum. 48 saat içinde planın hazır.",
     icon: ClipboardList,
   },
   {
     number: "03",
-    title: "Uygula & Takip",
-    description: "Haftalık form kontrolleri ve gerektiğinde plan güncellemeleri.",
+    title: "Uygula & Haftalık Takip",
+    description: "Planını uygulamaya başlıyorsun. Her Pazar günü form fotoğraflarını ve ölçümlerini paylaşıyorsun. Aynı gün içinde gelişimini değerlendirip gerekirse planında düzenleme yapıyorum.",
     icon: Dumbbell,
   },
   {
     number: "04",
-    title: "Sonuç",
-    description: "Hedefine ulaş, sürdürülebilir bir yaşam tarzı edin.",
+    title: "Sonuç & Sürdürülebilirlik",
+    description: "Hedefine ulaştıkça planın seninle birlikte evrilir. Sadece kısa vadeli sonuç değil, uzun vadede sürdürebileceğin bir yaşam tarzı kazanıyorsun.",
     icon: Trophy,
   },
 ];
@@ -101,46 +101,34 @@ export const TRANSFORMATIONS = [
 // ── Pricing Packages ──
 export const PACKAGES = [
   {
-    name: "Başlangıç",
-    duration: "8 Hafta",
-    price: "X.XXX",
-    description: "Spora yeni başlayanlar veya temelleri oturtmak isteyenler için.",
+    name: "Koçluk Paketi",
+    duration: "4 Hafta",
+    price: "1.500",
+    description: "Kişiye özel antrenman ve beslenme programı ile dönüşümüne başla.",
     features: [
       "Kişiye özel antrenman programı",
-      "Temel beslenme planı",
-      "Haftalık form kontrolü",
-      "WhatsApp destek",
+      "Kalori hesaplanmış beslenme planı",
+      "Vitamin ve supplement planlaması",
+      "Haftalık form kontrolü (Pazar günü)",
+      "WhatsApp üzerinden bire bir iletişim",
     ],
     featured: false,
   },
   {
-    name: "Dönüşüm",
+    name: "Premium Koçluk",
     duration: "12 Hafta",
-    price: "X.XXX",
-    description: "Ciddi bir dönüşüm hedefleyenler için tam kapsamlı program.",
+    price: "3.500",
+    description: "Uzun vadeli dönüşüm hedefleyenler için tam kapsamlı program.",
     features: [
-      "Tam kişiselleştirilmiş antrenman planı",
+      "Kişiye özel antrenman programı",
       "Detaylı makro bazlı beslenme planı",
-      "Haftalık strateji görüşmeleri",
-      "Supplement rehberliği",
+      "Vitamin ve supplement planlaması",
+      "Haftalık form kontrolü ve plan güncelleme",
       "Öncelikli WhatsApp destek",
+      "Aylık ilerleme raporu",
     ],
     featured: true,
     badge: "En Popüler",
-  },
-  {
-    name: "Elite",
-    duration: "16 Hafta",
-    price: "X.XXX",
-    description: "Maksimum sonuç ve premium destek isteyenler için.",
-    features: [
-      "Her şey Dönüşüm paketinde dahil",
-      "Aylık 1:1 görüntülü görüşme",
-      "Gelişim takip dashboard'u",
-      "Yaşam tarzı ve uyku optimizasyonu",
-      "7/24 öncelikli destek",
-    ],
-    featured: false,
   },
 ];
 

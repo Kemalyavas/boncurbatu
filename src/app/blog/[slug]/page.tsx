@@ -108,9 +108,6 @@ export default async function BlogPostPage({
               <span className="px-3 py-1 text-[10px] font-medium tracking-wider uppercase rounded-full border border-[var(--border-hover)] text-[var(--accent)]">
                 {post.category}
               </span>
-              <span className="text-xs text-[var(--text-dim)]">
-                {post.readTime} okuma
-              </span>
             </div>
             <h1 className="text-3xl sm:text-4xl font-bold text-[var(--text)] leading-tight">
               {post.title}
@@ -172,9 +169,6 @@ export default async function BlogPostPage({
                     <h4 className="mt-2 font-semibold text-[var(--text)] group-hover:text-[var(--accent)] transition-colors duration-200 leading-snug">
                       {r.title}
                     </h4>
-                    <span className="mt-3 block text-xs text-[var(--text-dim)]">
-                      {r.readTime} okuma
-                    </span>
                   </Link>
                 ))}
               </div>

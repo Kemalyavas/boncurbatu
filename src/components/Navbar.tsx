@@ -95,24 +95,9 @@ export default function Navbar() {
             ))}
           </div>
 
-          {/* Desktop Social + Auth */}
+          {/* Desktop Auth */}
           <div className="hidden lg:flex items-center gap-4">
-            {SOCIAL_LINKS.map((social) => {
-              const IconComp = socialIconMap[social.icon];
-              return (
-                <a
-                  key={social.label}
-                  href={social.href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-[var(--text-muted)] hover:text-[var(--text)] transition-colors duration-200"
-                  aria-label={social.label}
-                >
-                  <IconComp size={20} />
-                </a>
-              );
-            })}
-            <div className="flex items-center gap-3 ml-2 pl-4 border-l border-[var(--border)]">
+            <div className="flex items-center gap-3">
               <a
                 href="/giris"
                 className="text-sm font-medium text-[var(--text-muted)] hover:text-[var(--text)] transition-colors duration-200"

@@ -37,9 +37,6 @@ export default function BlogPage() {
                     <span className="px-3 py-1 text-[10px] font-medium tracking-wider uppercase rounded-full border border-[var(--border-hover)] text-[var(--accent)]">
                       {post.category}
                     </span>
-                    <span className="text-xs text-[var(--text-dim)]">
-                      {post.readTime} okuma
-                    </span>
                   </div>
                   <h2 className="text-lg font-bold text-[var(--text)] group-hover:text-[var(--accent)] transition-colors duration-200 leading-snug">
                     {post.title}
