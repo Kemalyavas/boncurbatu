@@ -12,6 +12,7 @@ export const NAV_LINKS = [
   { label: "Dönüşümler", href: "/#donusumler" },
   { label: "Paketler", href: "/#paketler" },
   { label: "SSS", href: "/#sss" },
+  { label: "Blog", href: "/blog" },
 ];
 
 // ── Social Links ──
