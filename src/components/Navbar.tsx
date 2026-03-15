@@ -74,7 +74,7 @@ export default function Navbar() {
               className="hidden md:flex items-center gap-1.5 px-4 py-1.5 rounded-full border border-[var(--border-hover)] hover:border-[var(--text-dim)] transition-colors duration-200 text-xs text-[var(--text-muted)]"
             >
               <span className="font-semibold text-[var(--accent)]">BONCUR</span>
-              <span>koduyla %10 indirim</span>
+              <span>koduyla Proteinocean'da %10 indirim</span>
             </a>
           </div>
 

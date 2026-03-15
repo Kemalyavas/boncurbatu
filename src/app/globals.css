@@ -11,8 +11,8 @@
   --accent-glow: rgba(230, 57, 70, 0.25);
   --accent-glow-strong: rgba(230, 57, 70, 0.4);
   --text: #F1F1F1;
-  --text-muted: #999999;
-  --text-dim: #666666;
+  --text-muted: #b0b0b0;
+  --text-dim: #808080;
   --whatsapp: #25D366;
 }
 
@@ -83,6 +83,7 @@ body {
 
 .card-gradient:hover {
   border-color: var(--border-hover);
+  box-shadow: 0 0 30px rgba(230, 57, 70, 0.08), 0 0 60px rgba(230, 57, 70, 0.04);
 }
 
 /* ── Featured Card (Pricing) ── */

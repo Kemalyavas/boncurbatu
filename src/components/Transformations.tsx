@@ -12,9 +12,9 @@ export default function Transformations() {
   const active = TRANSFORMATIONS[activeIdx];
 
   return (
-    <section id="donusumler" className="relative py-24 sm:py-32 section-glow">
+    <section id="donusumler" className="relative py-16 sm:py-24 section-glow">
       <div className="max-w-7xl mx-auto px-6">
-        <AnimateOnScroll className="text-center mb-12">
+        <AnimateOnScroll className="text-center mb-8">
           <SectionBadge text="SONUÇLAR" />
           <h2
             className="mt-6 text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight"
@@ -31,7 +31,7 @@ export default function Transformations() {
         </AnimateOnScroll>
 
         {/* Name Tabs */}
-        <AnimateOnScroll className="flex justify-center gap-3 mb-10">
+        <AnimateOnScroll className="flex justify-center gap-3 mb-6">
           {TRANSFORMATIONS.map((t, i) => (
             <button
               key={t.name}
@@ -51,7 +51,7 @@ export default function Transformations() {
         <div className="grid lg:grid-cols-2 gap-6">
           {/* Testimonial Card */}
           <AnimateOnScroll direction="left">
-            <div className="card-gradient p-8 sm:p-10 h-full flex flex-col justify-between">
+            <div className="card-gradient p-6 sm:p-8 h-full flex flex-col justify-between">
               {/* Stars */}
               <div>
                 <div className="flex gap-1 mb-6">

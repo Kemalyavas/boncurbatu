@@ -53,13 +53,13 @@ export const PROCESS_STEPS = [
   {
     number: "01",
     title: "İletişim & Analiz",
-    description: "WhatsApp üzerinden boy, kilo, hedef, antrenman geçmişi ve beslenme alışkanlıklarını paylaşıyorsun. Varsa form fotoğraflarını gönderiyorsun. Mevcut durumunu ve hedeflerini birlikte değerlendiriyoruz.",
+    description: "WhatsApp üzerinden boy, kilo, hedef, antrenman geçmişi ve beslenme alışkanlıklarını paylaşıyorsun ve form fotoğraflarını gönderiyorsun. Mevcut durumunu ve hedeflerini birlikte değerlendiriyoruz.",
     icon: MessageSquare,
   },
   {
     number: "02",
     title: "Kişisel Plan Hazırlığı",
-    description: "Bilgilerine göre sana özel antrenman programı ve kalori hesaplanmış beslenme planı hazırlıyorum. Supplement ihtiyacın varsa onu da plana ekliyorum. 48 saat içinde planın hazır.",
+    description: "Bilgilerine göre sana özel antrenman programı ve kalori hesaplanmış beslenme planı hazırlıyorum. Supplement ihtiyacın varsa onu da plana ekliyorum. 24 saat içinde planın hazır.",
     icon: ClipboardList,
   },
   {
@@ -136,11 +136,11 @@ export const PACKAGES = [
 export const FAQ_ITEMS = [
   {
     question: "Online koçluk nasıl işliyor?",
-    answer: "Bilgilerini paylaştıktan sonra 48 saat içinde sana özel antrenman ve beslenme planını hazırlıyorum. Planını WhatsApp üzerinden iletiyorum ve haftalık form kontrolleriyle sürekli takip ediyorum.",
+    answer: "Bilgilerini paylaştıktan sonra 24 saat içinde sana özel antrenman ve beslenme planını hazırlıyorum. Planını WhatsApp üzerinden iletiyorum ve haftalık form kontrolleriyle sürekli takip ediyorum.",
   },
   {
     question: "Planım ne zaman hazır?",
-    answer: "Bilgilerini ve ödemeyi aldıktan sonra en geç 48 saat içinde planın hazır. Saat 20:00'den önce yapılan başvurular genellikle aynı gün cevaplanıyor.",
+    answer: "Bilgilerini ve ödemeyi aldıktan sonra en geç 24 saat içinde planın hazır. Saat 20:00'den önce yapılan başvurular genellikle aynı gün cevaplanıyor.",
   },
   {
     question: "Haftalık takip nasıl yapılıyor?",
