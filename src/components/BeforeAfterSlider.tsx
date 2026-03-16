@@ -39,7 +39,7 @@ export default function BeforeAfterSlider() {
   return (
     <div
       ref={containerRef}
-      className="card-gradient overflow-hidden relative aspect-[4/3] cursor-ew-resize select-none"
+      className="card-gradient overflow-hidden relative aspect-[7/8] cursor-ew-resize select-none"
       onMouseDown={handleMouseDown}
       onMouseUp={handleMouseUp}
       onMouseLeave={handleMouseUp}
